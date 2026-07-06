@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const myProjects = [
   {
     id: 7,
@@ -12,22 +14,22 @@ export const myProjects = [
     ],
     href: "https://mo6am7.github.io/Cloth-Store/",
     logo: "",
-    image: "/assets/projects/clothing-store.png",
+    image: `${base}assets/projects/clothing-store.png`,
     tags: [
       {
         id: 1,
         name: "HTML5",
-        path: "/assets/logos/html5.svg",
+        path: `${base}assets/logos/html5.svg`,
       },
       {
         id: 2,
         name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        path: `${base}assets/logos/css3.svg`,
       },
       {
         id: 3,
         name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
+        path: `${base}assets/logos/javascript.svg`,
       },
     ],
   },
@@ -44,22 +46,22 @@ export const myProjects = [
     ],
     href: "https://mo6am7.github.io/Coffee/",
     logo: "",
-    image: "/assets/projects/coffee-hero-section.png",
+    image: `${base}assets/projects/coffee-hero-section.png`,
     tags: [
       {
         id: 1,
         name: "HTML5",
-        path: "/assets/logos/html5.svg",
+        path: `${base}assets/logos/html5.svg`,
       },
       {
         id: 2,
         name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        path: `${base}assets/logos/css3.svg`,
       },
       {
         id: 3,
         name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
+        path: `${base}assets/logos/javascript.svg`,
       },
     ],
   },
@@ -76,27 +78,27 @@ export const myProjects = [
     ],
     href: "https://mo6am7.github.io/HomeVerse/",
     logo: "",
-    image: "/assets/projects/homeverse.png",
+    image: `${base}assets/projects/homeverse.png`,
     tags: [
       {
         id: 1,
         name: "React",
-        path: "/assets/logos/react.svg",
+        path: `${base}assets/logos/react.svg`,
       },
       {
         id: 2,
         name: "Vite",
-        path: "/assets/logos/vitejs.svg",
+        path: `${base}assets/logos/vitejs.svg`,
       },
       {
         id: 3,
         name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        path: `${base}assets/logos/css3.svg`,
       },
       {
         id: 4,
         name: "Framer Motion",
-        path: "/assets/logos/framermotion.svg",
+        path: `${base}assets/logos/framermotion.svg`,
       },
     ],
   },
@@ -113,22 +115,22 @@ export const myProjects = [
     ],
     href: "https://mo6am7.github.io/Agency_AI-Digital_Solutions/",
     logo: "",
-    image: "/assets/projects/Agency AI - Digital Solutions.png",
+    image: `${base}assets/projects/Agency AI - Digital Solutions.png`,
     tags: [
       {
         id: 1,
         name: "React",
-        path: "/assets/logos/react.svg",
+        path: `${base}assets/logos/react.svg`,
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${base}assets/logos/tailwindcss.svg`,
       },
       {
         id: 3,
         name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
+        path: `${base}assets/logos/javascript.svg`,
       },
     ],
   },
@@ -145,22 +147,22 @@ export const myProjects = [
     ],
     href: "https://mo6am7.github.io/IronPulse/",
     logo: "",
-    image: "/assets/projects/IronPulse.png",
+    image: `${base}assets/projects/IronPulse.png`,
     tags: [
       {
         id: 1,
         name: "Next.js",
-        path: "/assets/logos/nodejs.svg",
+        path: `${base}assets/logos/nodejs.svg`,
       },
       {
         id: 2,
         name: "React",
-        path: "/assets/logos/react.svg",
+        path: `${base}assets/logos/react.svg`,
       },
       {
         id: 3,
         name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        path: `${base}assets/logos/tailwindcss.svg`,
       },
     ],
   },
@@ -177,22 +179,22 @@ export const myProjects = [
     ],
     href: "https://mo6am7.github.io/Tic-Tac-Toe/",
     logo: "",
-    image: "/assets/projects/Tic-Tac-Toe.png",
+    image: `${base}assets/projects/Tic-Tac-Toe.png`,
     tags: [
       {
         id: 1,
         name: "React",
-        path: "/assets/logos/react.svg",
+        path: `${base}assets/logos/react.svg`,
       },
       {
         id: 2,
         name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        path: `${base}assets/logos/css3.svg`,
       },
       {
         id: 3,
         name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
+        path: `${base}assets/logos/javascript.svg`,
       },
     ],
   },
@@ -209,22 +211,22 @@ export const myProjects = [
     ],
     href: "https://mo6am7.github.io/EV-olution/",
     logo: "",
-    image: "/assets/projects/EV - olution.png",
+    image: `${base}assets/projects/EV - olution.png`,
     tags: [
       {
         id: 1,
         name: "React",
-        path: "/assets/logos/react.svg",
+        path: `${base}assets/logos/react.svg`,
       },
       {
         id: 2,
         name: "Vite",
-        path: "/assets/logos/vitejs.svg",
+        path: `${base}assets/logos/vitejs.svg`,
       },
       {
         id: 3,
         name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        path: `${base}assets/logos/css3.svg`,
       },
     ],
   },
@@ -234,17 +236,17 @@ export const mySocials = [
   {
     name: "GitHub",
     href: "",
-    icon: "/assets/socials/github.svg",
+    icon: `${base}assets/socials/github.svg`,
   },
   {
     name: "Linkedin",
     href: "",
-    icon: "/assets/socials/linkedIn.svg",
+    icon: `${base}assets/socials/linkedIn.svg`,
   },
   {
     name: "WhatsApp",
     href: "",
-    icon: "/assets/socials/whatsApp.svg",
+    icon: `${base}assets/socials/whatsApp.svg`,
   },
 ];
 
