@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import Alert from "../components/Alert";
 import { Particles } from "../components/Particles";
 const Contact = () => {
@@ -27,27 +26,31 @@ const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
 
+    const form = new FormData();
+    form.append("access_key", "61465dc3-cc82-4a6e-a58e-6581248f72d7");
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("message", formData.message);
+
     try {
-      console.log("From submitted:", formData);
-      await emailjs.send(
-        "service_79b0nyj",
-        "template_17us8im",
-        {
-          from_name: formData.name,
-          to_name: "Ali",
-          from_email: formData.email,
-          to_email: "AliSanatiDev@gmail.com",
-          message: formData.message,
-        },
-        "pn-Bw_mS1_QQdofuV"
-      );
-      setIsLoading(false);
-      setFormData({ name: "", email: "", message: "" });
-      showAlertMessage("success", "You message has been sent!");
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: form,
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        setIsLoading(false);
+        setFormData({ name: "", email: "", message: "" });
+        showAlertMessage("success", "Your message has been sent!");
+      } else {
+        setIsLoading(false);
+        showAlertMessage("danger", data.message || "Submission failed!");
+      }
     } catch (error) {
       setIsLoading(false);
       console.log(error);
-      showAlertMessage("danger", "Somthing went wrong!");
+      showAlertMessage("danger", "Something went wrong!");
     }
   };
   return (
